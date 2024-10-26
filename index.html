@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('imagenes/viajes.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.1); 
+        }
+
+        .heros {
+            background: rgba(0, 0, 0, 0.4); 
+            color: #fff; 
+            padding: 2rem 0; 
+        }
+
+        .text-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px; 
+    border-radius: 8px; 
+}
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Viajes Infinito: Conectando Sueños y Destinos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#destino" style="color:  #3EB489">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonio" style="color:  #3EB489">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto" style="color:  #3EB489">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <div class="text-overlay">
+                <h1>Explora el Mundo con Nosotros!</h1>
+                <p>Cada viaje es una oportunidad para crear recuerdos inolvidables.</p>
+                <a href="#contacto" class="btn btn-primary btn-lg" style="background-color: #3EB489; color: white;">Planifica tu viaje ahora!</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="destino" class="container text-center my-5 heros">
+        <h2>Destinos Destacados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Playa</h3>
+                <p>Muchas playas están rodeadas de culturas ricas y diversas, que enriquece la experiencia del viajero</p>
+                <img src="./imagenes/playas.jpeg" alt="playa"   width="180" height="160">
+            </div>
+            <div class="col-md-4">
+                <h3>Montañas</h3>
+                <p>Estancias en cabañas o lodges con vistas impresionantes.</p>
+                <img src="./imagenes/montanas.jpg" alt="montanas"   width="180" height="160">
+            </div>
+            <div class="col-md-4">
+                <h3>Gastronomía Local</h3>
+                <p>Tours gastronómicos que incluyen degustaciones de platos típicos y clases de cocina.</p>
+                <img src="./imagenes/gastronomia.jpeg" alt="gastronomia"   width="180" height="160">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonio" class="container text-center my-5  heros">
+        <h2>Testimonios</h2>
+        <blockquote class="blockquote">
+            <p class="mb-0">"Viajes Infinito hizo de nuestro viaje una experiencia inolvidable. Desde el momento en que contactamos a la agencia, el equipo fue increíblemente atento y profesional. Nos ayudaron a planificar un viaje a las playas de Tulum que superó nuestras expectativas. Las recomendaciones para restaurantes y actividades fueron perfectas. Definitivamente, volveremos a confiar en ellos para nuestras próximas aventuras!"</p>
+            <footer class="blockquote-footer" style="color: #00aaff;">David Centeno. Madrid, España. Diseñador Gráfico</footer>
+            <p class="mb-0">"Nuestra luna de miel en las Maldivas fue un sueño hecho realidad gracias a Viajes Infinito. Cada aspecto del viaje fue cuidadosamente organizado y el servicio fue excepcional. Nos sentimos como reyes en cada momento. !Altamente recomendados!"</p>
+            <footer class="blockquote-footer" style="color: #00aaff;">Javier Ruiz. Valencia, España. Ingeniero</footer>
+            <p class="mb-0">"Viajar con Viajes Infinito fue una experiencia increíble. Desde el inicio, el equipo se preocupó por cada detalle de nuestro viaje a Bali. Las recomendaciones de hoteles y actividades fueron perfectas. Definitivamente volveré a planificar mi próxima aventura con ellos"</p>
+            <footer class="blockquote-footer" style="color: #00aaff;">Lucca Ferrari. Milan, Italia. Fotografo</footer>
+        </blockquote>
+    </section>
+
+    <section id="contacto" class="container my-5 heros">
+        <h2>Contacto</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu email">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="text-center my-5">
+        <p>© 2024 Agencia de Viajes.</p>
+        <p href="#">Política de Privacidad</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
